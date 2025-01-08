@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+    --primary-color: #bf7fff;
+    --background-color: #000000;
+    --text-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+.nav-links a {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: 0.8rem;
+}
+
+.buy-button {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--primary-color);
+}
+
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.crypto-address {
+    color: var(--primary-color);
+    font-size: 0.7rem;
+    padding: 0.5rem;
+    border: 1px solid var(--primary-color);
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.title {
+    color: var(--primary-color);
+    font-size: 3rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    color: var(--primary-color);
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+button {
+    font-size: 0.8rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid var(--primary-color);
+}
+
+.primary-button {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+.secondary-button {
+    color: var(--primary-color);
+}
+
+.features {
+    padding: 4rem 2rem;
+}
+
+.section-title {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    border: 1px solid var(--primary-color);
+    padding: 2rem;
+    text-align: left;
+    background-color: rgba(191, 127, 255, 0.05);
+}
+
+.feature-icon {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    color: var(--primary-color);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card p {
+    color: var(--text-color);
+    font-size: 0.7rem;
+    line-height: 1.5;
+    opacity: 0.8;
+}
+
+.use-cases {
+    padding: 4rem 2rem;
+}
+
+.use-cases-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.use-case-card {
+    border: 1px solid var(--primary-color);
+    padding: 2rem;
+    background-color: rgba(191, 127, 255, 0.05);
+}
+
+.use-case-card h3 {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.use-case-card ul {
+    list-style: none;
+}
+
+.use-case-card li {
+    color: var(--text-color);
+    font-size: 0.7rem;
+    margin-bottom: 0.8rem;
+    opacity: 0.8;
+}
+
+.platform-stats {
+    padding: 4rem 2rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.stat-card {
+    padding: 2rem;
+}
+
+.stat-number {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.stat-label {
+    color: var(--text-color);
+    font-size: 0.7rem;
+    line-height: 1.5;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+    }
+    
+    .crypto-address {
+        font-size: 0.6rem;
+    }
+    
+    .nav-links a {
+        margin-left: 1rem;
+        font-size: 0.7rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .feature-card {
+        padding: 1.5rem;
+    }
+
+    .use-cases-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .use-case-card {
+        padding: 1.5rem;
+    }
+} 
