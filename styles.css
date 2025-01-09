@@ -260,16 +260,11 @@ button {
     opacity: 0.8;
 }
 
-.join-void {
-    padding: 4rem 2rem;
+.footer {
+    padding: 2rem;
     text-align: center;
-}
-
-.join-buttons {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    margin-bottom: 2rem;
+    color: var(--primary-color);
+    font-size: 0.7rem;
 }
 
 .disclaimer {
