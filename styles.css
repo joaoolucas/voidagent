@@ -324,3 +324,7 @@ button {
         align-items: center;
     }
 } 
+
+.cta-buttons a {
+    text-decoration: none;
+} 
